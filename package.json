@@ -1,0 +1,28 @@
+{
+  "name": "polyglot-tag",
+  "version": "0.0.1",
+  "description": "Template literal tag to embed scripts from other languages into Javascript.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpaterson/polyglot-tag.git"
+  },
+  "keywords": [
+    "polyglot",
+    "shell",
+    "script",
+    "template",
+    "literal",
+    "tag",
+    "string",
+    "python",
+    "ruby",
+    "bash"
+  ],
+  "author": "Roy Paterson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpaterson/polyglot-tag/issues"
+  },
+  "homepage": "https://github.com/rpaterson/polyglot-tag#readme"
+}
