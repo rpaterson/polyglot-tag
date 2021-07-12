@@ -1,6 +1,6 @@
 # polyglot-tag
 
-Easily embed scripts in any language in to a Javascript file. True polyglot programming!
+Easily embed scripts in any interpreted language in to a NodeJS script. True polyglot programming!
 
 # Usage
 
@@ -32,7 +32,7 @@ console.log(polyglot`
 Call polyglot with an options object to create a template literal tag with those options.
 
 ## interpreter
-Run the script with the supplied interpreter. If not supplied the script is written to a file and executed directly.
+Run the script with the supplied interpreter. If not supplied the script is written to a file and executed directly (using the shebang).
 ```Javascript
 const ruby = polyglot({ interpreter: 'ruby' });
 console.log(ruby`print "Hello Ruby!"`);
@@ -47,7 +47,7 @@ console.log(polyglot({ file: 'my-script.sh' })`
 ```
 
 ## tmpdir
-Temp directory used for writing script files, defaults to [os.tmpdir()](https://nodejs.org/docs/latest/api/os.html#os_os_tmpdir).
+Temp directory used for writing interpreted script files, defaults to [os.tmpdir()](https://nodejs.org/docs/latest/api/os.html#os_os_tmpdir). Files area automatically deleted after each script is run.
 ```Javascript
 console.log(polyglot({ tmpdir: '.' })`
     printf "$0"
