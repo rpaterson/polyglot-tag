@@ -1,6 +1,6 @@
 {
   "name": "polyglot-tag",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Template literal tag to embed scripts from other languages into Javascript.",
   "main": "index.js",
   "repository": {
