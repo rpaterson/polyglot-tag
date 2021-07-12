@@ -47,7 +47,7 @@ console.log(polyglot({ file: 'my-script.sh' })`
 ```
 
 ## tmpdir
-Temp directory used for writing interpreted script files, defaults to [os.tmpdir()](https://nodejs.org/docs/latest/api/os.html#os_os_tmpdir). Files area automatically deleted after each script is run.
+Temp directory used for writing interpreted script files, defaults to [os.tmpdir()](https://nodejs.org/docs/latest/api/os.html#os_os_tmpdir). Files are automatically deleted after each script is run.
 ```Javascript
 console.log(polyglot({ tmpdir: '.' })`
     printf "$0"
